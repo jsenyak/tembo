@@ -1,2 +1,2 @@
-This is the first version of README.
-It will not be the last.
+This is the second version of README.
+This, too, will not be the last.
