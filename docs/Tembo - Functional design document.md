@@ -1,5 +1,5 @@
 # Functional design document #
-## for "Tembo" (initial release: version 1.1.0)##
+## for "Tembo" (initial release: version 1.1.0)
 
 Author: [Josh Senyak](mailto://josh.senyak@quicksilverconsulting.com) at [Quicksilver Consulting](https://quicksilverconsulting.com)
 
@@ -28,7 +28,7 @@ Contents of this document:
 
 ----------
 
-### 1. <a id="AboutThisDocument"></a>About this document ###
+### 1. <a id="AboutThisDocument"></a>About this document
 This Functional Design Document describes the functionality of “Tembo,” a software package now under development. In this document we describe functionality for the initial release of Tembo. 
 
 This document does not describe the underlying implementation (code, routines, data structures) by which Tembo will accomplish this functionality.
@@ -37,7 +37,7 @@ Since Tembo is an open source project, suggestions and improvements to this docu
 
 This document describes the functionality of the initial release of Tembo (version 1.1.0). This version of Tembo is intended as a proof of concept, that is, as the simplest possible version that can accomplish the overall purpose  of the Tembo software. In addition, this document includes [notes on functionality](#FeaturesForFuture) suggested for future versions. 
 
-### 2. <a id="SummaryDescription"></a>Summary description of Tembo ###
+### 2. <a id="SummaryDescription"></a>Summary description of Tembo
 Tembo is a WordPress plugin that allows a user (the "developer") to create web-based relational database applications quickly and easily. 
 
 Tembo creates the new application as a WordPress plugin, making it extremely easy to install, deploy and share. 
@@ -60,7 +60,7 @@ Tembo is licensed under the GNU GPL v3.0. Applications built out by Tembo are co
 
 
 
-### 3. <a id="Vocabulary"></a>Vocabulary ###
+### 3. <a id="Vocabulary"></a>Vocabulary
 This section clarifies the specific meaning of certain terms as used in this document.
 
 **Tembo** is a WordPress plugin that lets an average user develop relational database applications for the web.
@@ -107,7 +107,7 @@ An **ancestor table** is a table which is the parent, grandparent, etc. of anoth
 **Monetization** is the use of the Web Monetization protocol described by [Coil's web specification](https://webmonetization.org/specification.html). This specification refers to a particular API used for transferring small amounts of money from website visitors to content creators. In the current document, the term does not refer to advertising revenue, paid subscriptions or any of the many other meanings of "web monetization."  
 
 
-### 4. <a id="SummaryOfFeatures"></a>Summary of features ###
+### 4. <a id="SummaryOfFeatures"></a>Summary of features 
 
 1. Tembo can be installed on any standard WordPress site hosted on an independent host (i.e., not wordpress.com). It will be compatible with the latest stable version of WordPress at time of release. It is not intended for multi-site use. (\** **Enhancement:** Multi-site capability.)
 
@@ -160,7 +160,7 @@ An **ancestor table** is a table which is the parent, grandparent, etc. of anoth
    
 
 
-### 5. <a id="InterviewDetail"></a>Interview Process - Detail###
+### 5. <a id="InterviewDetail"></a>Interview Process - Detail
 For each project, Tembo guides the developer quickly and easily through the minimum set of decisions needed to create a relational web database. The heart of this development process is an interview-style data collection. In this section we describe the details of the interview process. 
 
 Here is a [diagram of the interview process](https://github.com/jsenyak/tembo/blob/main/docs/TemboInterview.1.0.jpg):
@@ -405,7 +405,7 @@ There are six sections in the interview. Each section has a status of either "In
         * A button: "Done defining this report." Validates the selections on the screen and takes the developer back to the "Reports" section.
 
 
-### 6. <a id="ApplicationDescription"></a>Description of a Tembo Application###
+### 6. <a id="ApplicationDescription"></a>Description of a Tembo Application
 1. **Scale:** A typical Tembo application may have in the order of hundreds of users, perhaps half a dozen data tables (although technically Tembo will allow many more(, and tens of thousands of data records.
 
 1. **Accessibility:** Users of the application are not expected to have previous familiarity with WordPress or Tembo. The application should be almost as immediately intuitive as (say) an online shopping site or airline reservation system.   
@@ -502,7 +502,7 @@ There are six sections in the interview. Each section has a status of either "In
 
 1. **Protecting updates in a multi-user environment:** User-initiated record updates use optimistic concurrency. If User A and User B both select the same record for editing, and user B updates before user A, application will alert user A that their changes have not been saved.
 
-### 7. <a id="FeaturesForFuture"></a>Features for future versions###
+### 7. <a id="FeaturesForFuture"></a>Features for future versions
 
 Here, in no particular order, are features which may be desirable for future versions of Tembo.
 
@@ -598,7 +598,7 @@ Here, in no particular order, are features which may be desirable for future ver
 
 
   
-### 8. <a id="QuestionsOutstanding"></a>Questions outstanding###
+### 8. <a id="QuestionsOutstanding"></a>Questions outstanding
 1. Is it possible to configure monetization to reward two recipients simultaneously? Specifically, could an application be configured to pay the developer's wallet as well as (to a lesser degree) the wallet of the Tembo development project?
 
 1. To remove a component from a drag-and-drop area - is it better to use a drag-out or to use a "remove" button? Is it important to be consistent with this behavior or does it depend on context?
