@@ -4,5 +4,6 @@ Applications created with Tembo are themselves deployed as WordPress plugins. Th
 
 Tembo leverages the mySQL database that lives quietly behind every WordPress site. This makes it easy to integrate your project with the rest of your WordPress site.
 
-Visit the Tembo site at [https://www.tembo-plugin.com/(]https://www.tembo-plugin.com/)
+Visit the Tembo site at https://www.tembo-plugin.com .
+
 Current status of Tembo: Version 1.1 is still in development; no release version yet!
